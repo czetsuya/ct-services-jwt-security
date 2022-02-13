@@ -44,8 +44,8 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:ssh//git@github.com/czetsuya/ct-universal-signon.git</connection>
-    <developerConnection>scm:git:ssh//git@github.com/czetsuya/ct-universal-signon.git</developerConnection>
+    <connection>scm:git:ssh://git@github.com/czetsuya/ct-universal-signon.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/czetsuya/ct-universal-signon.git</developerConnection>
     <url>https://github.com/czetsuya/ct-universal-signon/tree/master</url>
     <tag>ct-universal-signon-0.0.1</tag>
   </scm>
