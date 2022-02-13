@@ -10,7 +10,7 @@
 
   <groupId>com.czetsuyatech</groupId>
   <artifactId>ct-universal-signon</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.2-SNAPSHOT</version>
   <name>ct-universal-signon</name>
   <description>ct-universal-signon</description>
 
@@ -47,7 +47,7 @@
     <connection>scm:git:git@github.com:czetsuya/ct-universal-signon.git</connection>
     <developerConnection>scm:git:git@github.com:czetsuya/ct-universal-signon.git</developerConnection>
     <url>https://github.com/czetsuya/ct-universal-signon/tree/master</url>
-    <tag>ct-universal-signon-0.0.2</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
