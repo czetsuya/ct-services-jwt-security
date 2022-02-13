@@ -5,6 +5,7 @@ import static com.nimbusds.jose.JWSAlgorithm.RS256;
 import com.czetsuyatech.web.security.config.CognitoJwtConfigData;
 import com.czetsuyatech.web.security.jwt.CognitoJwtTokenProcessor;
 import com.czetsuyatech.web.security.jwt.CtJwtTokenProcessor;
+import com.czetsuyatech.web.security.method.CtMethodSecurityConfiguration;
 import com.nimbusds.jose.jwk.source.JWKSource;
 import com.nimbusds.jose.jwk.source.RemoteJWKSet;
 import com.nimbusds.jose.proc.JWSKeySelector;
@@ -20,11 +21,16 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 @Configuration
 @ConditionalOnClass({CtJwtTokenProcessor.class})
 @EnableConfigurationProperties({CognitoJwtConfigData.class})
 @RequiredArgsConstructor
+@Import(value = {
+    CtWebSecurityConfiguration.class,
+    CtMethodSecurityConfiguration.class
+})
 public class CtSecurityAutoConfiguration {
 
   private final CognitoJwtConfigData cognitoJwtConfigData;
@@ -46,5 +52,10 @@ public class CtSecurityAutoConfiguration {
   @Bean
   public CtJwtTokenProcessor ctJwtTokenProcessor() throws MalformedURLException {
     return new CognitoJwtTokenProcessor(configurableJWTProcessor(), cognitoJwtConfigData);
+  }
+
+  @Bean
+  public CtAuthenticationProvider ctAuthenticationProvider() {
+    return new CtAuthenticationProvider();
   }
 }
