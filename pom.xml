@@ -21,6 +21,7 @@
     <maven.javadoc.plugin.version>3.3.2</maven.javadoc.plugin.version>
     <maven.release.plugin.version>3.0.0-M5</maven.release.plugin.version>
     <nexus.staging.maven.plugin.version>1.6.8</nexus.staging.maven.plugin.version>
+    <maven.gpg.plugin.version>3.0.1</maven.gpg.plugin.version>
   </properties>
 
   <organization>
@@ -151,4 +152,34 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>oss-release</id>
+      <activation>
+        <property>
+          <name>oss-release</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>${maven.gpg.plugin.version}</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
