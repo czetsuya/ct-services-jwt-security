@@ -10,7 +10,7 @@
 
   <groupId>com.czetsuyatech</groupId>
   <artifactId>ct-services-jwt-security</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <name>CT Services JWT Security</name>
   <description>Secure microservices using JWT token.</description>
 
@@ -47,7 +47,7 @@
     <connection>scm:git:https://git@github.com/czetsuya/ct-services-jwt-security.git</connection>
     <developerConnection>scm:git:https://git@github.com/czetsuya/ct-services-jwt-security.git</developerConnection>
     <url>https://github.com/czetsuya/ct-services-jwt-security/tree/master</url>
-    <tag>HEAD</tag>
+    <tag>ct-services-jwt-security-0.0.1</tag>
   </scm>
 
   <distributionManagement>
