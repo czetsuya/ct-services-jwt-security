@@ -10,7 +10,7 @@
 
   <groupId>com.czetsuyatech</groupId>
   <artifactId>ct-services-jwt-security</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>CT Services JWT Security</name>
   <description>Secure microservices using JWT token.</description>
 
