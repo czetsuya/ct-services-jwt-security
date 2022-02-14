@@ -10,8 +10,8 @@
 
   <groupId>com.czetsuyatech</groupId>
   <artifactId>ct-services-jwt-security</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>ct-universal-signon</name>
+  <version>0.0.1</version>
+  <name>CT Services JWT Security</name>
   <description>Secure microservices using JWT token.</description>
 
   <properties>
@@ -44,10 +44,10 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:git@github.com:czetsuya/ct-universal-signon.git</connection>
-    <developerConnection>scm:git:git@github.com:czetsuya/ct-universal-signon.git</developerConnection>
-    <url>https://github.com/czetsuya/ct-universal-signon/tree/master</url>
-    <tag>HEAD</tag>
+    <connection>scm:git:git@github.com:czetsuya/ct-services-jwt-security.git</connection>
+    <developerConnection>scm:git:git@github.com:czetsuya/ct-services-jwt-security.git</developerConnection>
+    <url>https://github.com/czetsuya/ct-services-jwt-security/tree/master</url>
+    <tag>ct-services-jwt-security-0.0.1</tag>
   </scm>
 
   <distributionManagement>

@@ -24,8 +24,8 @@ This module is available in GitHub and can be added to your Maven project as a d
 ```
 <dependency>
   <groupId>com.czetsuyatech</groupId>
-  <artifactId>ct-universal-signon</artifactId>
-  <version>${ct.universal.signon}</version>
+  <artifactId>ct-services-jwt-security</artifactId>
+  <version>${ct.sevices.jwt.security.version}</version>
 </dependency>
 ```
 
