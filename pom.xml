@@ -9,10 +9,10 @@
   </parent>
 
   <groupId>com.czetsuyatech</groupId>
-  <artifactId>ct-universal-signon</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <artifactId>ct-services-jwt-security</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
   <name>ct-universal-signon</name>
-  <description>ct-universal-signon</description>
+  <description>Secure microservices using JWT token.</description>
 
   <properties>
     <java.version>17</java.version>
