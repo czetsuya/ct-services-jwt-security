@@ -1,6 +1,6 @@
 *If you would like to support these tutorials, you can contribute to my [Patreon account](https://patreon.com/czetsuya)
 
-# CzetsuyaTech Universal Signon
+# CzetsuyaTech Services JWT Security
 
 ## Introduction
 
