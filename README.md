@@ -106,8 +106,7 @@ from the WebSecurityConfigurerAdapter class.
 
 ## Testing
 
-I have created a Spring Boot project that use this library available at https://github.
-com/czetsuya/aws-cognito-spring-security. This project contains the Security configuration, custom method expression
+I have created a Spring Boot project that use this library available at https://github.com/czetsuya/aws-cognito-spring-security. This project contains the Security configuration, custom method expression
 handler, and sample controllers.
 
 ```
