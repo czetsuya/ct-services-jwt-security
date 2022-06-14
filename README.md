@@ -104,6 +104,16 @@ protected void configure(HttpSecurity http) throws Exception {
 Unfortunately, I'm not able to decouple the CtAuthenticationProcessingFilter because it needs the authenticationManager
 from the WebSecurityConfigurerAdapter class.
 
+## Class Diagram
+
+### Spring Security (Web, HTTP)
+
+![Class Diagram](./docs/cd-spring-security.png)
+
+### Method Security
+
+![Class Diagram](./docs/cd-method-security.png)
+
 ## Testing
 
 I have created a Spring Boot project that use this library available at https://github.com/czetsuya/aws-cognito-spring-security. This project contains the Security configuration, custom method expression

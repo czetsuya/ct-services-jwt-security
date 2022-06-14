@@ -1,6 +1,5 @@
 package com.czetsuyatech.web.security.filters;
 
-import com.czetsuyatech.web.security.SecurityConstants;
 import com.czetsuyatech.web.security.jwt.CtJwtTokenProcessor;
 import java.io.IOException;
 import javax.servlet.FilterChain;
